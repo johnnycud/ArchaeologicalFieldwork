@@ -3,6 +3,17 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <string name="app_name">Hillforts</string>
+        <string name="hint_hillfortTitle">Hillfort Title</string>
+        <string name="hint_hillfortDescription">Description </string>
+        <string name="add">ADD</string>
+        <string name="button_addHilltop">Add Hilltop</string>
+        <string name="logout">Logout</string>
+        <string name="login">Login</string>
+        <string name="register">Register</string>
+        <string name="delete">Delete Hilltop</string>
+        <string name="hillforts">Hillfort List</string>
+        <string name="menu_cancelHillfort">Cancel</string>
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="colorPrimary">@color/colorPrimary</item>

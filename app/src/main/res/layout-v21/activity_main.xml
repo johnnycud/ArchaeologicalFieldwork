@@ -9,7 +9,7 @@
     android:background="@color/colorAccent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".activities.HillfortActivity">
 
     <Toolbar
         android:id="@+id/toolbar"

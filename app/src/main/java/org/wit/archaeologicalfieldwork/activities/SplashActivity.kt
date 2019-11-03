@@ -1,4 +1,4 @@
-package org.wit.archaeologicalfieldwork
+package org.wit.archaeologicalfieldwork.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
+import org.wit.archaeologicalfieldwork.R
 
 class SplashActivity : AppCompatActivity() {
 
@@ -21,7 +22,7 @@ class SplashActivity : AppCompatActivity() {
         //4 second splash time
         Handler().postDelayed({
             //start main activity
-            startActivity(Intent( this@SplashActivity, MainActivity::class.java))
+            startActivity(Intent( this@SplashActivity, HillfortActivity::class.java))
             //finish this activity
             finish()
         },4000)

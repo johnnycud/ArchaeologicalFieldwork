@@ -1,4 +1,4 @@
-package org.wit.archaeologicalfieldwork
+package org.wit.archaeologicalfieldwork.activities
 
 import android.os.Bundle
 import android.view.Menu
@@ -9,11 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.user_login.*
 import kotlinx.android.synthetic.main.user_registration.*
-import kotlinx.android.synthetic.main.activity_main.login_layout as login_layout1
-import kotlinx.android.synthetic.main.user_registration.register_layout as register_layout1
+import org.wit.archaeologicalfieldwork.DatabaseHelper
+import org.wit.archaeologicalfieldwork.R
 
 
-class MainActivity : AppCompatActivity() {
+class HillfortActivity : AppCompatActivity() {
 
     lateinit var handler: DatabaseHelper
 
