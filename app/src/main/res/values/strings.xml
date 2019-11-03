@@ -3,4 +3,8 @@
     <string name="welcome">Welcome</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
+    <string name="logout">LOGOUT</string>
+    <string name="hillforts">Hillforts</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
 </resources>

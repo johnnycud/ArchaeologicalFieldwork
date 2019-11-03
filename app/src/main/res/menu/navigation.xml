@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        app:showAsAction="ifRoom"
+        android:title="@string/logout"/>
+
+    <item
+        android:id="@+id/navigation_hillforts"
+        android:icon="@drawable/hillfort"
+        app:showAsAction="ifRoom"
+        android:title="@string/hillforts"/>
+
+    <item
+        android:id="@+id/add_hillfort"
+        android:icon="@drawable/add"
+        app:showAsAction="ifRoom"
+        android:title="@string/add"/>
+
+    <item
+        android:id="@+id/delete_hillfort"
+        android:icon="@drawable/delete"
+        app:showAsAction="ifRoom"
+        android:title="@string/delete"/>
+
+</menu>

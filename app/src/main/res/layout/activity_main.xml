@@ -1,26 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_11"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:src="@drawable/logo"
-        android:layout_width="250dp"
-        android:layout_height="400dp"
-        android:text="Hillfort Explore"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@mipmap/ic_launcher" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loading....."
-        android:textColor="#fff"
+        android:text="@string/welcome"
         android:textSize="30sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="@string/register" />
+
+
+
+    <ImageView
+    android:src="@drawable/logo2"
+    android:layout_width="250dp"
+    android:layout_height="400dp"
+    android:text="Hillfort Explore"/>
+
+    <include
+        android:id="@+id/register_layout"
+        android:visibility="gone"
+        layout="@layout/user_registration"/>
+    <include
+        android:id="@+id/login_layout"
+        android:visibility="gone"
+        layout="@layout/user_login"/>
+
+    app:menu="@menu/navigation"/>
 
 </LinearLayout>
