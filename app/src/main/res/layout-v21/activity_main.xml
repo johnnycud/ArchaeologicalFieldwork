@@ -63,6 +63,6 @@
         android:visibility="gone"
         layout="@layout/user_login"/>
 
-    app:menu="@menu/navigation"/>
+
 
 </LinearLayout>
